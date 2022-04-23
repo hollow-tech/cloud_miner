@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import styled from 'styled-components';
+import { Button } from './components/Buttons/Buttons.styles';
+import { Checkbox, CheckCircle } from './components/Checkboxs';
+import { Typography } from './components/Typography/Typography.styles';
 
-function App() {
+
+
+
+const App:React.FC = () =>{
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>   
+        <Button variants="outlined" color='#0B65C6'>
+          Создать депозит
+        </Button>
+        <Button variants="contained" color='#0B65C6'>
+          Создать депозит
+        </Button>
+        <Typography variants='headline1'>
+        Lato | 40 | Semibold
+        </Typography>
+        <Typography variants='headline2'>
+        Lato | 32 | Semibold
+        </Typography>
+        <Typography variants='headline3'>
+        Lato | 24 | medium
+        </Typography>
+        <Typography variants='body'>
+        Lato | 18 | medium
+        </Typography>
+        <Typography variants='subtitle'>
+        Lato | 14 | regular
+        </Typography>
+        <CheckCircle type='checkbox'>
+          
+        </CheckCircle>
+  </>
+  )
 }
 
 export default App;
