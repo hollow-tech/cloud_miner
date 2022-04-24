@@ -1,7 +1,7 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import React from 'react';
 import { Button } from './components/Buttons/Buttons.styles';
-import { Checkbox, CheckCircle } from './components/Checkboxs';
+import { CheckCircle } from './components/Checkboxs';
+import { Aside } from './modules/Aside';
 import { Typography } from './components/Typography/Typography.styles';
 
 
@@ -32,9 +32,13 @@ const App:React.FC = () =>{
         <Typography variants='subtitle'>
         Lato | 14 | regular
         </Typography>
-        <CheckCircle type='checkbox'>
+        <CheckCircle type='checkbox' >
           
         </CheckCircle>
+        <Aside>
+          
+        </Aside>
+        
   </>
   )
 }
